@@ -1,0 +1,64 @@
+﻿<Page x:Class="TAgency.TourList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TAgency"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TourList">
+
+    <Grid Style="{StaticResource colorTheme}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"  >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите название тура:" Width="175" TextAlignment="Right" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
+                <TextBox Width="225" Name="TbSearch" FontFamily="Yu Gothic UI Semibold" TextChanged="TbSearch_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Выберите тип:" Width="175" TextAlignment="Right" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
+                <ComboBox Width="225" Name="ComboType" SelectionChanged="ComboType_SelectionChanged" FontFamily="Yu Gothic UI Semibold" DisplayMemberPath="tour_type_name"/>
+            </StackPanel>
+        </WrapPanel>
+        
+        <ListView x:Name="TourSlide" Grid.Row="1" Background="#FF312F2F" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" Width="800">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="20" Width="700" Height="425">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="300"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Image Width="300" Grid.Row="1" Stretch="UniformToFill" HorizontalAlignment="Center" Margin="5">
+                            <Image.Source>
+                                <Binding Path="tour_image">
+                                    <Binding.TargetNullValue>
+                                        <ImageSource>
+                                            C:\Users\Антон\Desktop\NULL.jpg
+                                        </ImageSource>
+                                    </Binding.TargetNullValue>
+                                </Binding>
+                            </Image.Source>
+                        </Image>
+                        <TextBlock Text="{Binding tour_name}" VerticalAlignment="Center" TextAlignment="Center" Width="300" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="5 5" FontSize="18" Grid.Row="0" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
+                        <TextBlock Text="{Binding price, StringFormat={}{0:N2} РУБ}" Grid.Row="2" Margin="5 5 5 15" HorizontalAlignment="Center" FontSize="18" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
+                        <TextBlock Text="{Binding count_tickets, StringFormat={}Билетов в наличии: {0}}" Grid.Row="3" FontSize="12" Foreground="White" FontFamily="Yu Gothic UI Semibold" HorizontalAlignment="Right"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </Grid>
+</Page>
