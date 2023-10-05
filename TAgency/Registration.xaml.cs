@@ -42,6 +42,7 @@ namespace TAgency
                 _currentUser.last_name = Nname.Text.ToString();
                 _currentUser.father_name = ThirdName.Text.ToString();
                 _currentUser.phone_number = PhoneNumber.Text.ToString();
+                _currentUser.role_ID = 2;
                 var CurrentGender = GenderN.SelectedItem as Gender;
                 _currentUser.gender_ID = CurrentGender.gender_ID;
                 DateTime date = BirthdayDate.SelectedDate.Value;

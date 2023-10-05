@@ -80,6 +80,9 @@
     <Compile Include="AdminPanel.xaml.cs">
       <DependentUpon>AdminPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdminSale.xaml.cs">
+      <DependentUpon>AdminSale.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdminTour.xaml.cs">
       <DependentUpon>AdminTour.xaml</DependentUpon>
     </Compile>
@@ -184,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AdminPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminSale.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

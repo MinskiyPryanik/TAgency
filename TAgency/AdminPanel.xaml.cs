@@ -47,7 +47,7 @@ namespace TAgency
 
         private void Sales_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.MainFrame.Navigate(new AdminSales())
+            Manager.MainFrame.Navigate(new AdminSale());
         }
 
         private void TypeOfAllocation_Click(object sender, RoutedEventArgs e)
