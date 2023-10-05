@@ -16,12 +16,12 @@ namespace TAgency
 
         private void EditBtn_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.MainFrame.Navigate(new EditSale((sender as Button).DataContext as Sale, false));
+            Manager.MainFrame.Navigate(new EditSale((sender as Button).DataContext as Sale, false));
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.MainFrame.Navigate(new EditSale(null, true));
+            Manager.MainFrame.Navigate(new EditSale(null, true));
         }
 
         private void BtnDel_Click(object sender, RoutedEventArgs e)
@@ -34,7 +34,7 @@ namespace TAgency
                     Manager.GetContext().Sale.RemoveRange(Removing);
                     Manager.GetContext().SaveChanges();
                     MessageBox.Show("Успешно удалено");
-                    MyGrid.ItemsSource = Manager.GetContext().Hotel.ToList();
+                    MyGrid.ItemsSource = Manager.GetContext().Sale.ToList();
                 }
                 catch (Exception ex)
                 {

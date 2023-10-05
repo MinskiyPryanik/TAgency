@@ -110,6 +110,9 @@
     <Compile Include="EditHotel.xaml.cs">
       <DependentUpon>EditHotel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditSale.xaml.cs">
+      <DependentUpon>EditSale.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EditTour.xaml.cs">
       <DependentUpon>EditTour.xaml</DependentUpon>
     </Compile>
@@ -219,6 +222,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditHotel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditSale.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -17,7 +17,7 @@
 
         <DataGrid x:Name="MyGrid" Style="{StaticResource styleDG}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Код Заказа" Binding="{Binding sale_ID}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
+                <DataGridTextColumn Header="Код Заказа" Binding="{Binding sale_ID}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="80" CanUserResize="False"/>
                 <DataGridTextColumn Header="Логин" Binding="{Binding Clients.user_login}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Clients.first_name}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Clients.last_name}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
