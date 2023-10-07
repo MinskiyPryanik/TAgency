@@ -17,7 +17,6 @@ namespace TAgency
         public int sale_ID { get; set; }
         public int client_ID { get; set; }
         public System.DateTime sale_date { get; set; }
-        public int price { get; set; }
         public int tour_ID { get; set; }
     
         public virtual Clients Clients { get; set; }

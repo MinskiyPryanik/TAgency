@@ -30,9 +30,6 @@ namespace TAgency
             {
                 try
                 {
-                    //TourAgencyEntities tourAgencyEntities = new TourAgencyEntities();
-                    //tourAgencyEntities.Country.RemoveRange(Removing);
-                    //tourAgencyEntities.SaveChanges();
                     Manager.GetContext().Country.RemoveRange(Removing);
                     Manager.GetContext().SaveChanges();
                     MessageBox.Show("Успешно удалено");

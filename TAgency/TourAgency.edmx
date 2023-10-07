@@ -65,8 +65,7 @@
           </Key>
           <Property Name="sale_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="client_ID" Type="int" Nullable="false" />
-          <Property Name="sale_date" Type="datetime" Nullable="false" />
-          <Property Name="price" Type="int" Nullable="false" />
+          <Property Name="sale_date" Type="date" Nullable="false" />
           <Property Name="tour_ID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -383,8 +382,7 @@
           </Key>
           <Property Name="sale_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="client_ID" Type="Int32" Nullable="false" />
-          <Property Name="sale_date" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="price" Type="Int32" Nullable="false" />
+          <Property Name="sale_date" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="tour_ID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Clients" Relationship="Self.FK__Sale__client_ID__403A8C7D" FromRole="Sale" ToRole="Clients" />
           <NavigationProperty Name="Tour" Relationship="Self.FK__Sale__tour_ID__412EB0B6" FromRole="Sale" ToRole="Tour" />
@@ -708,7 +706,6 @@
                 <ScalarProperty Name="sale_ID" ColumnName="sale_ID" />
                 <ScalarProperty Name="client_ID" ColumnName="client_ID" />
                 <ScalarProperty Name="sale_date" ColumnName="sale_date" />
-                <ScalarProperty Name="price" ColumnName="price" />
                 <ScalarProperty Name="tour_ID" ColumnName="tour_ID" />
               </MappingFragment>
             </EntityTypeMapping>

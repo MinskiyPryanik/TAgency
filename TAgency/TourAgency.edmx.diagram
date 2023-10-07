@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c5e57b16fab147a6a115273bf7a48195" Name="Diagram1">
+      <Diagram DiagramId="71da4e6fb94e4a60ac8127fff0e50c18" Name="Diagram1">
         <EntityTypeShape EntityType="TourAgencyModel.Clients" Width="1.5" PointX="7.5" PointY="12.125" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Country" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Food_Type" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Gender" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Hotel" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Role" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TourAgencyModel.Sale" Width="1.5" PointX="9.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Sale" Width="1.5" PointX="9.75" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Tour" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="TourAgencyModel.Tour_Type" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />

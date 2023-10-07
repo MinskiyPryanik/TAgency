@@ -65,7 +65,7 @@ namespace TAgency
             SaleInfo.AppendLine("Цена отеля: " + Otch.Tour.Hotel.price.ToString() + "РУБ.");
             SaleInfo.AppendLine("Итого: " + (Otch.Tour.price + Otch.Tour.Hotel.price + "РУБ.").ToString());
             SaleInfo.AppendLine();
-            MessageBox.Show(SaleInfo.ToString());
+            MessageBox.Show("Отчёт успешно создан");
             using (FileStream stream = new FileStream("C:\\Users\\Антон\\Desktop\\Ticket.txt", FileMode.Create))
             {
                 byte[] buffer = Encoding.Default.GetBytes(SaleInfo.ToString());

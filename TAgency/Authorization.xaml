@@ -33,8 +33,6 @@
 
             <Button x:Name="BtnRegOn" Content="Вход" Margin="5,175,0,0" Style="{StaticResource UserButton}" Click="BtnRegOn_Click"/>
             <Button x:Name="BtnRegOff" Content="Зарегистрироваться" Margin="165,175,0,0" Style="{StaticResource AdminButton}" Click="BtnRegOff_Click"/>
-            <Button x:Name="AdminAuto" Content="Войти как Админ" Margin="0,210,0,0" Style="{StaticResource AdminButton}" Click="AdminAuto_Click" Visibility="Hidden"/>
-
         </Grid>
 
     </Grid>

@@ -35,11 +35,6 @@ namespace TAgency
             Manager.MainFrame.Navigate(new AdminClient());
         }
 
-        private void Admin_Click(object sender, RoutedEventArgs e)
-        {
-            //Manager.MainFrame.Navigate(new AdminList())
-        }
-
         private void TourType_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new AdminTourType());

@@ -22,7 +22,7 @@
                 <DataGridTextColumn Header="Имя" Binding="{Binding Clients.first_name}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Clients.last_name}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
                 <DataGridTextColumn Header="Отчество" Binding="{Binding Clients.father_name }" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
-                <DataGridTextColumn Header="Дата заказа" Binding="{Binding sale_date}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding sale_date, StringFormat='{}{0:dd/MM/yyyy}'}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
                 <DataGridTextColumn Header="Тур" Binding="{Binding Tour.tour_name}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
                 <DataGridTextColumn Header="Отель" Binding="{Binding Tour.Hotel.hotel_name}" FontFamily="Yu Gothic UI Semibold" FontSize="14"  Width="150" CanUserResize="False"/>
 

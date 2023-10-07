@@ -303,7 +303,6 @@
       <Link>Resources\NULL.jpg</Link>
     </Resource>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="TourAgency.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
