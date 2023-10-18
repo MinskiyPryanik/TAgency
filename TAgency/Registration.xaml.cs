@@ -22,7 +22,7 @@ namespace TAgency
             StringBuilder findError = new StringBuilder();
             if (Manager.GetContext().Clients.ToList().Exists(p => p.user_login == Login.Text))
                 findError.AppendLine("Данный Логин занят другим пользователем, побробуйте другой");
-            if (string.IsNullOrEmpty(Nname.Text) || string.IsNullOrEmpty(SecondName.Text) || string.IsNullOrEmpty(ThirdName.Text) || string.IsNullOrEmpty(Login.Text) || string.IsNullOrEmpty(Password.Text) || string.IsNullOrEmpty(PhoneNumber.Text))
+            if (string.IsNullOrEmpty(Nname.Text) || string.IsNullOrEmpty(SecondName.Text) || string.IsNullOrEmpty(ThirdName.Text) || string.IsNullOrEmpty(Login.Text) || string.IsNullOrEmpty(Password.Password) || string.IsNullOrEmpty(PhoneNumber.Text))
                 findError.AppendLine("Данные не были введены");
             if (GenderN.SelectedIndex == -1)
                 findError.AppendLine("Введите ваш пол");
@@ -50,7 +50,7 @@ namespace TAgency
                 var login = Login.Text.ToString();
                 _currentUser.user_login = login;
                 var crypt = System.Security.Cryptography.SHA256.Create();
-                var final = crypt.ComputeHash(Encoding.UTF8.GetBytes(Password.Text.ToString()));
+                var final = crypt.ComputeHash(Encoding.UTF8.GetBytes(Password.Password.ToString()));
                 _currentUser.user_pass = Convert.ToBase64String(final);
                 Manager.GetContext().Clients.Add(_currentUser);
                 Manager.GetContext().SaveChanges();

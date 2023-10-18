@@ -9,21 +9,7 @@
       Title="Register">
 
     <Grid Background="#FF292727" >
-        <TextBox Background="White" HorizontalAlignment="Left" Height="25" Margin="36,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="330" x:Name="Password">
-            <TextBox.Resources>
-                <Style TargetType="TextBox">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="TextBox">
-                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
-                                    <ScrollViewer x:Name="PART_ContentHost"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
+        <PasswordBox x:Name="Password" Style="{StaticResource tbPassword}" HorizontalAlignment="Left" Margin="37,102,0,0"/>
         <TextBox Background="White" HorizontalAlignment="Left" Height="24" Margin="36,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="330" x:Name="Login" FontFamily="Yu Gothic UI Semibold">
             <TextBox.Resources>
                 <Style TargetType="TextBox">
