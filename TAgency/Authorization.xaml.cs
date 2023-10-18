@@ -32,14 +32,15 @@ namespace TAgency
                 {
                     if (user.role_ID == 2)
                     {
-                        Manager.Login = Login.Text;
-                        Password.Password = "";
+                        Manager.ID = Manager.GetContext().Clients.Where(p => p.user_login == Login.Text).FirstOrDefault().client_ID;
                         Login.Text = "";
+                        Password.Password = "";
                         Manager.MainFrame.Navigate(new TourList());
-                        MessageBox.Show("Авторизация прошла успешно");
                     }
                     if (user.role_ID == 1)
                     {
+                        Login.Text = "";
+                        Password.Password = "";
                         MessageBox.Show("Добро пожаловать в админ панель");
                         Manager.MainFrame.Navigate(new AdminPanel());
                     }

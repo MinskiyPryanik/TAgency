@@ -12,6 +12,6 @@ namespace TAgency
             return _context;
         }
         public static Frame MainFrame { get; set; }
-        public static string Login { get; set; }
+        public static int ID{ get; set; }
     }
 }

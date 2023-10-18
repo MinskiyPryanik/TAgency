@@ -54,6 +54,7 @@
                         <TextBlock Text="{Binding tour_name}" VerticalAlignment="Center" TextAlignment="Center" Width="300" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="5 5" FontSize="18" Grid.Row="0" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
                         <TextBlock Text="{Binding price, StringFormat={}{0:N2} РУБ}" Grid.Row="2" Margin="5 5 5 15" HorizontalAlignment="Center" FontSize="18" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
                         <TextBlock Text="{Binding count_tickets, StringFormat={}Билетов в наличии: {0}}" Grid.Row="3" FontSize="12" Foreground="White" FontFamily="Yu Gothic UI Semibold" HorizontalAlignment="Right"/>
+                        <Button x:Name="BuyButton" Content="Купить" Style="{StaticResource UserButton}" Grid.Row="3" HorizontalAlignment="Left" Click="BuyButton_Click"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
